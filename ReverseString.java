@@ -1,6 +1,18 @@
- cd /Users/priyankakatoch/Documents/Algopractice ; /usr/bin/env 
-/Users/priyankakatoch/Library/Java/JavaVirtualMachines/openjdk-22.0.1/Contents/Home/bin/java 
--XX:+ShowCodeDetailsInExceptionMessages -cp /Users/priyankakatoch/Library/Application\ 
-Support/Code/User/workspaceStorage/c588005d8319a4ad359ab3b6dc049126/redhat.java/jdt_ws/Algopractice_e7a29433/bin 
-ReverseString 
+public class ReverseString {
+    public static void reverseString(char[] s) {
+        int left = 0, right = s.length - 1;
+        while (left < right) {
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left++;
+            right--;
+        }
+    }
 
+    public static void main(String[] args) {
+        char[] s = {'r','a','c','e','c','a','r'};
+        reverseString(s);
+        System.out.println(s);
+    }
+}

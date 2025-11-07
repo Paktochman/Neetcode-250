@@ -1,3 +1,6 @@
+package Neetcode250;
+
+
 import java.util.*;
 
 public class EncodeDecodeStrings {
